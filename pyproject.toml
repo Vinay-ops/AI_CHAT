@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-chat-pro"
+version = "2.0.0"
+description = "A modern AI chat application powered by Groq's fast inference API"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Chat",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "customtkinter>=5.2.0",
+    "openai>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Vinay-ops/AI_CHAT"
+Repository = "https://github.com/Vinay-ops/AI_CHAT"
+Issues = "https://github.com/Vinay-ops/AI_CHAT/issues"
+
+[project.scripts]
+ai-chat-pro = "main:main"
+
+[tool.setuptools]
+packages = ["."]
+
+[tool.setuptools.package-data]
+"" = ["*.md", "*.txt"]
